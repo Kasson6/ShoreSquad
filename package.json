@@ -1,0 +1,38 @@
+{
+  "name": "shoresquad",
+  "version": "1.0.0",
+  "description": "A community-driven beach cleanup coordination platform for Singapore's shores",
+  "main": "js/app.js",
+  "scripts": {
+    "start": "live-server",
+    "deploy": "gh-pages -d .",
+    "lint": "eslint js/*.js",
+    "format": "prettier --write ."
+  },
+  "keywords": [
+    "beach-cleanup",
+    "community",
+    "environment",
+    "weather",
+    "maps",
+    "singapore",
+    "nea"
+  ],
+  "author": "ShoreSquad Team",
+  "homepage": "https://kasson67.github.io/ShoreSquad",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kasson67/ShoreSquad.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "leaflet": "^1.9.4"
+  },
+  "devDependencies": {
+    "eslint": "^9.28.0",
+    "gh-pages": "^6.3.0",
+    "live-server": "^1.2.2",
+    "prettier": "^3.5.3"
+  }
+}
