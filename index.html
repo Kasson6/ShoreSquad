@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width, initial-scale=1.0">    <meta name="description" content="ShoreSquad - Rally your crew for beach cleanups">
+    <title>ShoreSquad - Beach Cleanup Community</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Add Font Awesome for modern icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Add Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/KFQW0q+MJNVxpsMA="
+     crossorigin="" />
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">ShoreSquad</div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#weather">Weather</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#community">Community</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>        <section id="hero" class="hero">
+            <div class="cursed-overlay"></div>
+            <div class="hero-background">
+                <img src="images/main.gif" alt="Beach cleanup background" id="mainImage">
+            </div>
+            <h1>Unleash Your Inner Sorcerer</h1>
+            <p>Join the ShoreSquad. Cleanse our beaches of negative energy.</p>
+            <button class="cta-button infinity">Expand Your Domain</button>
+            <div class="cursed-pattern"></div>
+        </section><section id="map" class="map-section">
+            <h2>Domain Expansion: Pasir Ris</h2>            <div class="map-container">
+                <iframe
+                    width="100%"
+                    height="450"
+                    style="border:0"
+                    loading="lazy"
+                    allowfullscreen
+                    referrerpolicy="no-referrer-when-downgrade"
+                    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDsQ6dtbIV7F7MJSaOoeAMyTPdqy3lJnt4&q=1.381497,103.955574&zoom=15&center=1.381497,103.955574">
+                </iframe>
+                <div class="map-fallback">
+                    <p>If the map doesn't load, you can find us here:</p>
+                    <p><strong>Address:</strong> Street View Asia, Pasir Ris</p>
+                    <p><strong>Coordinates:</strong> 1.381497, 103.955574</p>
+                    <a href="https://www.google.com/maps?q=1.381497,103.955574" target="_blank" class="map-link">Open in Google Maps</a>
+                </div>
+            </div>
+            <div class="cleanup-info">
+                <p><i class="fas fa-map-marker-alt"></i> Street View Asia, Pasir Ris</p>
+                <p><i class="fas fa-calendar"></i> Next Cleanup: June 15, 2025</p>
+                <button class="cta-button map-cta">Register for Cleanup</button>
+            </div>
+        </section>
+
+        <section id="weather" class="weather-section">            <h2>Domain Weather Reading</h2>
+            <div id="weather-widget" class="weather-container">
+                <!-- Weather data will be inserted here by JavaScript -->
+            </div>
+        </section>        <section id="community" class="community-section">
+            <h2>Cursed Energy Impact</h2>
+            <div class="impact-stats">
+                <div class="impact-card">
+                    <i class="fas fa-trash-alt"></i>
+                    <h3>Waste Collected</h3>
+                    <p class="stat-number">2,500 kg</p>
+                    <p class="stat-label">Since January 2025</p>
+                </div>
+                <div class="impact-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Volunteers</h3>
+                    <p class="stat-number">1,200+</p>
+                    <p class="stat-label">Active Members</p>
+                </div>
+                <div class="impact-card">
+                    <i class="fas fa-clock"></i>
+                    <h3>Hours Dedicated</h3>
+                    <p class="stat-number">5,000+</p>
+                    <p class="stat-label">Community Service</p>
+                </div>
+                <div class="impact-card">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <h3>Beaches Cleaned</h3>
+                    <p class="stat-number">15</p>
+                    <p class="stat-label">Across Singapore</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="testimonials-section">
+            <h2>Sorcerer Testimonials</h2>
+            <div class="testimonials-grid">                <div class="testimonial-card">
+                    <div class="character-img">
+                        <img src="images/gojo.jpg" alt="Satoru Gojo">
+                    </div>
+                    <div class="testimonial-content">
+                        <div class="content-inner">
+                            <h3>Satoru Gojo</h3>
+                            <p class="quote">"With Infinity between us and ocean waste, we'll make our beaches limitlessly clean!"</p>
+                            <p class="title">Special Grade Sorcerer</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="character-img">
+                        <img src="images/megumi.jpg" alt="Megumi Fushiguro">
+                    </div>
+                    <div class="testimonial-content">
+                        <div class="content-inner">
+                            <h3>Megumi Fushiguro</h3>
+                            <p class="quote">"If we don't protect our oceans now, what future are we leaving behind?"</p>
+                            <p class="title">First Grade Sorcerer</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="character-img">
+                        <img src="images/nobara.jpg" alt="Nobara Kugisaki">
+                    </div>
+                    <div class="testimonial-content">
+                        <div class="content-inner">
+                            <h3>Nobara Kugisaki</h3>
+                            <p class="quote">"Nailing this beach cleanup like I nail cursed spirits!"</p>
+                            <p class="title">Third Grade Sorcerer</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="character-img">
+                        <img src="images/yuji.jpg" alt="Yuji Itadori">
+                    </div>
+                    <div class="testimonial-content">
+                        <div class="content-inner">
+                            <h3>Yuji Itadori</h3>
+                            <p class="quote">"The proper death I want to give? To all the trash in our oceans!"</p>
+                            <p class="title">Special Grade Sorcerer</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="character-img">
+                        <img src="images/toji.jpg" alt="Toji Fushiguro">
+                    </div>
+                    <div class="testimonial-content">
+                        <div class="content-inner">
+                            <h3>Toji Fushiguro</h3>
+                            <p class="quote">"Even without cursed energy, I'll eliminate every piece of trash from these shores."</p>
+                            <p class="title">The Sorcerer Killer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Domain Expansion Registration Modal -->
+    <div id="domainModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Domain Expansion Registration</h2>
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <form id="registrationForm">
+                    <div class="form-group">
+                        <label for="name">Sorcerer Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Contact Frequency:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="cursedTechnique">Cursed Technique:</label>
+                        <select id="cursedTechnique" name="cursedTechnique" required>
+                            <option value="">Select your technique</option>
+                            <option value="environmental">Environmental Purification</option>
+                            <option value="waste">Waste Manipulation</option>
+                            <option value="restoration">Beach Restoration</option>
+                            <option value="community">Community Binding</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="availability">Available Times:</label>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox" name="availability" value="weekday"> Weekdays</label>
+                            <label><input type="checkbox" name="availability" value="weekend"> Weekends</label>
+                            <label><input type="checkbox" name="availability" value="evening"> Evenings</label>
+                        </div>
+                    </div>
+                    <button type="submit" class="cta-button">Join the Domain</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 ShoreSquad. Making our beaches cleaner, together.</p>
+        </div>
+    </footer>    <!-- Add Leaflet JS -->    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+    <script src="js/map-loader.js"></script>
+    <script src="js/app.js" type="module"></script>
+
+    <!-- Initialize app with debugging -->
+    <script type="module">
+        import { initializeWeatherWidget } from './js/weather.js';
+        window.addEventListener('load', () => {
+            console.log('Window loaded, initializing weather widget...');
+            window.initializeWeatherWidget = initializeWeatherWidget;
+            initializeWeatherWidget().catch(error => {
+                console.error('Failed to initialize weather widget:', error);
+            });
+        });
+    </script>
+</body>
+</html>
